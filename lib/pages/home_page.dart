@@ -31,7 +31,7 @@ class _HomePageState extends State<HomePage> {
                   } else {
                     return Text(
                       '${snapshot.data}',
-                      style: Theme.of(context).textTheme.headline4,
+                      style: Theme.of(context).textTheme.headlineMedium,
                     );
                   }
                 }),
@@ -40,7 +40,7 @@ class _HomePageState extends State<HomePage> {
       ),
       floatingActionButton: FloatingActionButton(
         onPressed: bloc.incrementar,
-        tooltip: 'Increment',
+        tooltip: 'Incrementar',
         child: const Icon(Icons.add),
       ),
     );
